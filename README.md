@@ -10,13 +10,20 @@ This is an open-ended project from Codecademy with general instructions to creat
         - Your spirit animal today is: 
         - Your mantra today should be: 
 
-- "What Should I Draw?" generator
+**- "What Should I Draw?" generator
     - Animal(s)
     - With a blank
     - Doing an action
-    - At a location
+    - At a location**
 
 ### Construction
 - Store components in arrays in JavaScript
 - Use random numbers to assemble into a message
 - Print onto the console using Node.js
+
+### Timeline, Goals, Scope Creep
+- One week to completion (Friday, 7 October 2022)
+- Practice using branches and merging pull requests
+- Update README.md using markdown as the project progresses
+- 8 different options for each of the message components
+
