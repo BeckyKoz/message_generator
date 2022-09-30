@@ -10,11 +10,11 @@ This is an open-ended project from Codecademy with general instructions to creat
         - Your spirit animal today is: 
         - Your mantra today should be: 
 
-**- "What Should I Draw?" generator
+- **"What Should I Draw?" generator**  
     - Animal(s)
     - With a blank
     - Doing an action
-    - At a location**
+    - At a location
 
 ### Construction
 - Store components in arrays in JavaScript
