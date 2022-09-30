@@ -13,12 +13,11 @@ const randAnimal = function() {
     const animal = animalArr[animalIndex];
     return animal;
 }
-
 const animal = randAnimal();
 
-
 // Verb array
-const verbArr = ["walking", "flying", "swimming", "playing", "baking", "biking", "going to school", "driving", "sleeping", "painting"];
+const verbArr = ["walking", "flying", "swimming", "playing", "baking", 
+    "biking", "going to school", "driving", "sleeping", "painting", "playing soccer", "climbing a tree"];
 
 // Random verb generator
 const randVerb = function() {
@@ -27,17 +26,20 @@ const randVerb = function() {
     const verb = verbArr[verbIndex];
     return verb;
 }
-
-
+const verb = randVerb();
 
 // Location array
-const locationArr = [];
+const locationArr = ["under the bed", "at school", "at Grandma's house", "at camp", "on the playground", "in outer space", "on Mars", "in the kitchen", "in the bathtub"];
 
-
-// Location generator
-
-
+// Random location generator
+const randLocation = function() {
+    const randLocationLength = locationArr.length;
+    const locationIndex = Math.floor(Math.random() * randLocationLength);
+    const location = locationArr[locationIndex];
+    return location;
+}
+const location = randLocation();
 
 
 // Printout message
-console.log(`You could draw... ${animal} ${verb} `); 
+console.log(`You could draw ${animal}... ${verb}... ${location}!`); 
