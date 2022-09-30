@@ -10,11 +10,8 @@ This is an open-ended project from Codecademy with general instructions to creat
         - Your spirit animal today is: 
         - Your mantra today should be: 
 
-<<<<<<< HEAD
 - **"What Should I Draw?" generator**  
-=======
-**- "What Should I Draw?" generator**
->>>>>>> refs/remotes/origin/main
+
     - Animal(s)
     - With a blank
     - Doing an action
