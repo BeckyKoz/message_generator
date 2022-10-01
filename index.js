@@ -1,4 +1,4 @@
-// Message Generator Program
+// What Should I Draw? A random message generator project for Codecademy
 
 // Animal array
 const animalArr = ["a deer", "a bear", "a cat", "a dog", 
@@ -17,7 +17,8 @@ const animal = randAnimal();
 
 // Verb array
 const verbArr = ["walking", "flying", "swimming", "playing", "baking", 
-    "biking", "going to school", "driving", "sleeping", "painting", "playing soccer", "climbing a tree"];
+    "biking", "going to school", "driving", "sleeping", "painting", 
+    "playing soccer", "climbing a tree"];
 
 // Random verb generator
 const randVerb = function() {
@@ -29,7 +30,9 @@ const randVerb = function() {
 const verb = randVerb();
 
 // Location array
-const locationArr = ["under the bed", "at school", "at Grandma's house", "at camp", "on the playground", "in outer space", "on Mars", "in the kitchen", "in the bathtub"];
+const locationArr = ["under the bed", "at school", "at Grandma's house", 
+"at camp", "on the playground", "in outer space", "on Mars", 
+"in the kitchen", "in the bathtub"];
 
 // Random location generator
 const randLocation = function() {
@@ -43,3 +46,20 @@ const location = randLocation();
 
 // Printout message
 console.log(`You could draw ${animal}... ${verb}... ${location}!`); 
+
+//////////////////////////////////////////////////////
+// Challenge: generalize the random index generator
+
+const randomIndex = function(arr) {
+    return arr[Math.floor(Math.random()*arr.length)];
+}
+
+const animal2 = randomIndex(animalArr);
+const verb2 = randomIndex(verbArr);
+const location2 = randomIndex(locationArr);
+
+
+////////////////////
+// Create display on web page
+
+Document.main.h3.onclick.innerHTML = 
