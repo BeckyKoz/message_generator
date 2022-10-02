@@ -45,6 +45,7 @@ const location = randLocation();
 
 
 // Printout message
+const message = `You could draw ${animal}... ${verb}... ${location}!`;
 console.log(`You could draw ${animal}... ${verb}... ${location}!`); 
 
 //////////////////////////////////////////////////////
@@ -62,4 +63,22 @@ const location2 = randomIndex(locationArr);
 ////////////////////
 // Create display on web page
 
-Document.main.h3.onclick.innerHTML = 
+const disp = document.querySelector("#readout");
+const btn = document.querySelector("button");
+
+function displayMessage() {
+    // result.innerHTML = `You could draw ${animal}... ${verb}... ${location}!`;
+    display.innerHTML.style.color = blue;
+}
+
+btn.addEventListener('click', displayMessage);
+//result.addEventListener('click', displayMessage);
+//btn.onclick = displayMessage;
+///////////////////////
+// Test for using DOM events
+
+// function printMessage(){
+//     console.log();
+//  }
+  
+//  eventTarget.addEventListener('click', printMessage);
