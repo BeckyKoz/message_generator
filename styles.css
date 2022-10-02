@@ -46,13 +46,14 @@ main {
 }
 
 button {
-    margin-top: 4rem;
+    margin: 4rem 1rem 0 1rem;
     padding: 2rem 3rem;
     background-color: rgb(254, 255, 255);
     font-size: 1.75rem;
     border-radius: 3rem;
     border: none;
     box-shadow: .5rem .75rem 1.5rem #999999;
+    display: inline-block;
 }
 
 button:hover {
