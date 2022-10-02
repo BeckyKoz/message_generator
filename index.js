@@ -44,7 +44,7 @@ const randLocation = function() {
 // Create display on web page
 
 const disp = document.querySelector("#readout");
-const btn = document.querySelector("button");
+const btn = document.querySelector("#idea");
 
 // Animal array
 const animalArr = ["a deer", "a bear", "a cat", "a dog", 
@@ -73,20 +73,19 @@ function displayMessage() {
 // Display button handler
 btn.addEventListener('click', displayMessage);
     //btn.onclick = displayMessage;
-//btn.removeEventListener('click', displayMessage);
 
 //////////////////////////////////////
 
 // Reset button
-// const reset() {
+const resetBtn = document.body.querySelector('#reset');
 
-// }
+const reset = function() {
+   disp.innerHTML = "";
+   
+    // disp.innerHTML = '';
+}
 
-
-
-
-
-
+resetBtn.addEventListener('click', reset);
 
 //////////////////////////////////////////////////////
 // Challenge: generalize the random index generator
@@ -98,13 +97,3 @@ btn.addEventListener('click', displayMessage);
 // const animal2 = randomIndex(animalArr);
 // const verb2 = randomIndex(verbArr);
 // const location2 = randomIndex(locationArr);
-
-
-
-// Test for using DOM events
-
-// function printMessage(){
-//     console.log();
-//  }
-  
-//  eventTarget.addEventListener('click', printMessage);
